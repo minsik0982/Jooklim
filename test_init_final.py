@@ -1868,7 +1868,7 @@ class mainCog(commands.Cog):
 			else :
 				embed = discord.Embed(
 					title = "----- 분배결과! -----",
-					description= '```1차 세금 : ' + str(cal_tax1) + '\n1차 수령액 : ' + str(real_money) + '\n분배자 거래소등록금액 : ' + str(floor(real_money/num_sep)) + '\n2차 세금 : ' + str(cal_tax2) + '\n인당 실수령액 : ' + str(floor(float(floor(real_money/num_sep))*0.00)) + '```',
+					description= '```1차 세금 : ' + str(cal_tax1) + '\n1차 수령액 : ' + str(real_money) + '\n분배자 거래소등록금액 : ' + str(floor(real_money/num_sep)) + '\n2차 세금 : ' + str(cal_tax2) + '\n인당 실수령액 : ' + str(floor(float(floor(real_money/num_sep))*1.00)) + '```',
 					color=0xff00ff
 					)
 				await ctx.send(embed=embed, tts=False)
